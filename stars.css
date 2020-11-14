@@ -5,17 +5,35 @@
   align-items: center;
 }
 #rating .star {
-  flex: 0 0 50px;
+  flex: 0 0 100px;
   margin: 10px;
   cursor: pointer;
+}
+#rating .star svg {
+  width: 50px;
 }
 #rating .star svg path {
   stroke: darkblue;
   fill: transparent;
   transition: 0.5s ease;
 }
+#rating .star:hover svg path {
+  fill: yellow;
+}
 #rating .highlight svg path {
   fill: lightblue;
+}
+
+@keyframes embiggen {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=stars.css.map */
