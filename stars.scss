@@ -5,7 +5,7 @@
     align-items: center;
 
     .star {
-        flex: 0 0 100px;
+        flex: 0 0 50px;
         margin: 10px;
 
         cursor: pointer;
@@ -14,7 +14,7 @@
             width: 50px;
         }
         svg path {
-            stroke: darkblue;
+            stroke: rgb(0,51,141);
             fill: transparent;
 
             transition: .5s ease;
@@ -24,10 +24,16 @@
             fill: yellow;
         }
     }
-    .highlight svg path {
-        fill: lightblue;
+    .highlight  {
+        animation-name: embiggen;
+        animation-duration: 1s;
+            svg path {
+            fill: lightblue;
+     
         
     }
+    }
+
     
 }
 
